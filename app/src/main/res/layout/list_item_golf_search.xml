@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/search_item_club_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lubbock Country Club" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/search_item_course_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#BA000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_item_club_name"
+        tools:text="Lubbock Country Club" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/search_item_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="#88000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_item_course_name"
+        tools:text="124 Golf Course Lane, Murray, KY 42071, USA" />
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/search_item_address"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#0E000000"
+        android:layout_height="@dimen/_1sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
